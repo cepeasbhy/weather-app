@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Nunito&display=swap" rel="stylesheet">
+    <title>Weather Man</title>
+</head>
+<body>
+    <div id="main-content">
+        <div id="weather-app">
+            <div id="title-section">
+                <div id="main-title">WEATHER APP</div>
+                <div id="sub-title">made by ASBHY CEPE</div>
+            </div>
+            <div id="weather-content">
+                <div class="search">
+                    <form id="search-form" action="#">
+                        <div class="form-group">
+                            <input name="cityName" type="text" placeholder="Enter a City" required>
+                        </div>
+                        <div class="form-group">
+                            <button value="submit">SEARCH</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="default-display">
+                   Enter a city name in the search box
+                </div>
+                <div id="weather-info" style="display: none;">
+                    <div id="place-content">
+                        <span id="city-text"></span><span id="country-text"></span>
+                    </div>
+                    <div id="weather-condition">
+                        <img id="weather-icon" src="" alt="">
+                        <div id="description-text"></div>
+                    </div>
+                    <div id="temperature">
+                        <div id="image-wrapper">
+                            <img id="temp-icon" src="/icons/temperature.svg" alt="">
+                            <div id="temp-text">-</div>
+                        </div>
+                        <div id="max-temp"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
